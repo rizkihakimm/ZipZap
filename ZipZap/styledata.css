@@ -1,0 +1,104 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding:0;
+}
+
+:root {
+    --main-radius:5px;
+    --main-padding:5px;
+}
+
+.container {
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 0.8fr 1fr 1fr 1fr;
+    grid-template-rows: 0.2fr 1.5fr 1.5fr 1.5fr;
+    grid-template-areas:
+        "sidebar header header header"
+        "sidebar main main main"
+        "sidebar main main main"
+        "sidebar main main main"
+    ;
+    grid-gap: 0.8rem;
+}
+
+header {
+    padding-top: 1em;
+    text-align: center;
+    grid-area: header;
+}
+
+
+.logo {
+    padding: 2em;
+    font-family: poppins, sans-serif;
+}
+
+
+#navsidebar {
+    background: -webkit-linear-gradient(top, #de5c5c, #f0975b);
+    grid-area: sidebar;
+}
+
+ul {
+    list-style: none;
+}
+
+li {
+    padding-left: 2em;
+    margin-top: 2em;
+
+}
+
+li a {
+    color: #000;
+    text-decoration: none;
+    font-size: 20px;
+    font-family: poppins, sans-serif;
+}
+
+li a :hover {
+    color: #fff;
+}
+
+
+main {
+    text-align: left; 
+    font-size: 20px;
+    font-family: poppins;
+    grid-area: main;
+}
+
+/*Main konten Table*/
+
+hr {
+    margin-top: 1em;
+    width: 95%;
+    max-width: 100%;
+    margin-left: 20px;
+    border: 1px solid #e7b26c;
+}
+
+.table{
+    margin-top: 3em;
+	width: 70%;
+	border-collapse: collapse;
+    margin-left: 200px;
+}
+
+.table td,.table th{
+  padding:12px 15px;
+  border:1px solid #ddd;
+  text-align: center;
+  font-size:16px;
+}
+
+.table th{
+	background: -webkit-linear-gradient(top, #de5c5c, #f0975b);
+	color:#ffffff;
+}
+
+.table tbody tr:nth-child(odd){
+	background-color: #f5f5f5;
+}

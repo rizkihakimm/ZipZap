@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styleregister.css">
+    <title>Register</title>
+</head>
+<body>
+
+    <div class="container_form">
+
+        <div class="box_form">
+        <h2>Create your account</h2>
+
+        <form action="login.html" class="register-form" onsubmit=" return validasiregis()">
+
+            <label for="namalengkap">Nama Lengkap</label><br>
+            <input type="text" name="nama lengkap" id="namalengkap"><br>
+
+            <label for="alamat">Alamat</label><br>
+            <textarea name="" id="alamat" cols="30" rows="3"></textarea><br>
+
+            <label for="dob">Tanggal Lahir</label><br>
+            <input type="date" name="dob" id="dob"><br>
+
+            <label for="email">Email</label><br>
+            <input type="text" name="email" id="email"><br>
+
+            <label for="phonenum">Nomor Telepon</label><br>
+            <input type="text" name="phonenumber" id="phonenum"><br>
+
+            <button id="btn-submit">Submit</button>
+            
+        </form>
+            
+        </div>
+    </div>
+</body>
+
+<script src="validasiscript.js"></script>
+</html>
